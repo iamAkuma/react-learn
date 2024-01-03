@@ -11,16 +11,19 @@ const ClickCounter = () => {
       setCount(count === 0)
     }
   return (
+    <>
     <div>
       <button onClick={handleClick}>
-        Clicked {count} times
+        Clicked {count === 0 ? '0' : count} times
       </button>
-      <div>
-        <button onClick={handleReset}>
-          Reset Count
-        </button>
-      </div>
     </div>
+    <div>
+      <button onClick={handleReset}>
+        Reset
+      </button>
+    </div>
+    </>
+
 
   )
 }
