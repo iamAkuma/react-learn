@@ -1,23 +1,41 @@
-import React from 'react'
-// import ClickCounter from './components/ClickCounter'
-// import TogetherCounter from './components/TogetherCounter'
-import TicTacToe from './components/TicTacToe'
+import React, { useState } from 'react'
 
-const App = () => {
+
+function Square() {
+  const [values, setValue] = useState(null);
+
+  function handleClick() {
+    setValue('X')
+  }
   return (
-    <>
-      {/* <div>
-      <h1>
-        BUTTON CLICK COUNTER
-      </h1>
-        <h2>Updates Separately</h2>
-        <ClickCounter />
-        <ClickCounter />
-        <TogetherCounter />
-      </div> */}
-      <TicTacToe/>
-    </>
+    <button className='square' onClick={handleClick}>
+      {values}
+    </button>
   )
 }
 
-export default App
+export default function Board() {
+  const [squares, setSquares] = useState(Array(9).fill(null))
+  return (
+    <>
+      <div className='board'>
+      <div className="board-row">
+        <Square value={squares[0]} />
+        <Square value={squares[1]} />
+        <Square value={squares[2]} />
+      </div>
+      <div className="board-row">
+        <Square value={squares[3]} />
+        <Square value={squares[4]} />
+        <Square value={squares[5]} />
+      </div>
+      <div className="board-row">
+        <Square value={squares[6]} />
+        <Square value={squares[7]} />
+        <Square value={squares[8]} />
+      </div>
+      </div>
+    </>
+  );
+}
+

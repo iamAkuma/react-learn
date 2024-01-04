@@ -18,3 +18,17 @@ code {
 .avatar {
   border-radius: 50%;
 }
+
+.square{
+  width: 40px; /* Set the desired width */
+  height: 40px; /* Set the desired height */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  overflow: hidden; /* Hide any overflow content */
+  text-align: center; /* Center the content if there is any */
+  display: inline-block;
+}
+
+.board{
+  padding-top: 20px;
+}
