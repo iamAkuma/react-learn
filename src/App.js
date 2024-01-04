@@ -1,12 +1,12 @@
 import React from 'react'
-import Button from './components/Button'
-import ClickCounter from './components/ClickCounter'
-import TogetherCounter from './components/TogetherCounter'
+// import ClickCounter from './components/ClickCounter'
+// import TogetherCounter from './components/TogetherCounter'
+import TicTacToe from './components/TicTacToe'
 
 const App = () => {
   return (
     <>
-      <div>
+      {/* <div>
       <h1>
         BUTTON CLICK COUNTER
       </h1>
@@ -14,7 +14,8 @@ const App = () => {
         <ClickCounter />
         <ClickCounter />
         <TogetherCounter />
-      </div>
+      </div> */}
+      <TicTacToe/>
     </>
   )
 }
