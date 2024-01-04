@@ -1,9 +1,23 @@
 import React from 'react'
 
-const TicTacToe = () => {
+const TicTacToe = ({value}) => {
   return (
     <>
-      <button className = "square">X</button>
+     <div className="board-row">
+        <button className="square">{value}</button>
+        <button className="square">{value}</button>
+        <button className="square">{value}</button>
+      </div>
+      <div className="board-row">
+        <button className="square">{value}</button>
+        <button className="square">{value}</button>
+        <button className="square">{value}</button>
+      </div>
+      <div className="board-row">
+        <button className="square">{value}</button>
+        <button className="square">{value}</button>
+        <button className="square">{value}</button>
+      </div>
     </>
   )
 }
