@@ -7,8 +7,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
   align-items: center;
   text-align: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
 
 }
+
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -20,10 +28,42 @@ code {
 }
 
 .square{
+  box-sizing: border-box;
   width: 40px; /* Set the desired width */
   height: 40px; /* Set the desired height */
+  /* border: none; */
+  outline: none;
+  vertical-align: top;
+  line-height: 1;
+  cursor: pointer;
+  background-color: #cee8ea;
+  color: #333;
+  transition: background-color 0.3 ease;
+}
+
+.square:hover{
+  background-color: #eee;
 }
 
 .board{
-  padding-top: 20px;
+  margin: auto;
+  max-width: 400px;
+}
+
+.restart{
+  background-color: #fad4d4;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+.restart:hover{
+  background-color: #45a049;
 }
