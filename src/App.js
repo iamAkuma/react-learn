@@ -10,6 +10,7 @@ function Square({ value, onSquareClick }) {
 
 export default function Board() {
   const [squares, setSquares] = useState(Array(9).fill(null));
+  const [xIsNext, setxIsNext] = useState(true);
 
   function handleClick(i) {
     const nextSquares = squares.slice();
